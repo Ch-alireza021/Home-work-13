@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#btn{
+    border: 7px solid white;
+    width: 170px;
+    font-weight: 800;
+
+}
+
+#lockDiv{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#unlock{
+    display: none;
+}
