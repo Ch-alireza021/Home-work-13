@@ -45,26 +45,32 @@ const obj=[
 ]
 
 // creat table
-// const table=$("<table></table>")
+// const table=$("<table>")
 // $(".wrapper").append(table);
+function creatTable(){
 const table=$(".table");
-const tHead=$("<thead></thead>");
+const tHead=$("<thead>");
 table.append(tHead);
 
 const headRow=$("<tr></tr>")
-headRow.append(($(`<th></th>`)).text("Month"));
-headRow.append(($(`<th></th>`)).text("Sales"));
-headRow.append(($(`<th></th>`)).text("Amount"));
+headRow.append(($(`<th>`)).text("Month"));
+headRow.append(($(`<th>`)).text("Sales"));
+headRow.append(($(`<th>`)).text("Amount"));
 tHead.append(headRow);
 
-const tbody=$("<tbody></tbody>");
+const tbody=$("<tbody>");
 table.append(tbody);
 
     $.each(obj,function(index,sale){
         const row=$("<tr>");
-        row.append(($("<td></td>")).text(sale.month));
-        row.append(($("<td></td>")).text(sale.sales));
-        row.append(($("<td></td>")).text(sale.amount));
+        row.append(($("<td>")).text(sale.month));
+        row.append(($("<td>")).text(sale.sales));
+        row.append(($("<td>")).text(sale.amount));
         tbody.append(row);
     })
+    table.DataTable();
+  }
+creatTable()
 
+const input=document.querySelector("input");
+input.style.cssText=`background:#2C3034;color:white`;

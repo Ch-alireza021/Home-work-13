@@ -1,3 +1,19 @@
 .striped{
-    background-color: gray;
+    background-color: hwb(0 50% 50%);
+}
+.container-fluid{
+    background: rgb(122,125,140);
+    background: radial-gradient(circle, rgba(122,125,140,1) 0%, rgba(72,75,93,1) 22%, rgba(63,63,82,1) 32%, rgba(93,88,88,1) 46%, rgba(61,66,69,1) 51%, rgba(64,74,78,1) 61%, rgba(95,118,135,1) 73%, rgba(80,93,106,1) 80%, rgba(61,63,64,1) 84%, rgba(83,117,131,1) 90%, rgba(0,0,0,1) 100%);
+}
+#DataTables_Table_0_info{
+    background:#2C3034;
+    color:white;
+    padding: 10px;
+}
+#DataTables_Table_0{
+    margin: 10px 0;
+}
+
+#DataTables_Table_0_filter{
+    margin-bottom: 10px;
 }
