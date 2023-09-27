@@ -62,12 +62,12 @@ table.append(tbody);
         tbody.append(row);
     })
 
-// $(document).bind("contextmenu", function (e) {
-//         e.preventDefault();
-//         alert("Right Click is Disabled");
-//     });
+$(document).bind("contextmenu", function (e) {
+        e.preventDefault();
+        alert("Right Click is Disabled");
+    });
 
-    $(document).bind("contextmenu", function(e) {
-      alert("Right Click is Disabled");
-      return false;
-  });
+  //   $(document).bind("contextmenu", function(e) {
+  //     alert("Right Click is Disabled");
+  //     return false;
+  // });
